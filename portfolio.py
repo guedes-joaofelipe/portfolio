@@ -2,22 +2,32 @@ import streamlit as st
 import pandas as pd
 
 
-st.title("Similars annotations")
+def main():
+    st.set_page_config(layout="wide")
 
-catalog = ["A cat", "A dog", "A pidgeon"]
+    st.title("João Felipe Guedes")
+
+    st.subheader("Senior Data Scientist @ Globo")
+
+    "Hi! My name is João Felipe and..."
+
+    st.markdown("### Contact")
+    columns = st.columns(4)
+
+    with columns[0]:
+        st.write(
+            ":man-frowning: [LinkedIn](https://www.linkedin.com/in/joao-felipe-guedes/)"
+        )
+
+    with columns[1]:
+        st.write(":email: [Mail](mailto:guedes.joaofelipe@poli.ufrj.br)")
+
+    with columns[2]:
+        st.write(":male-technologist: [Github](https://github.com/guedes-joaofelipe)")
+
+    with columns[3]:
+        st.write(":pencil2: [Medium](https://medium.com/@guedes.joaofelipe)")
 
 
-titles = st.multiselect("Chosen similar titles", options=catalog)
-
-if st.button("Choose"):
-    st.write(titles)
-
-
-col1, col2 = st.columns(2)
-
-with col1:
-    st.header("A cat")
-
-
-with col2:
-    st.header("A dog")
+if __name__ == "__main__":
+    main()

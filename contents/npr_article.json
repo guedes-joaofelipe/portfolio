@@ -1,0 +1,8 @@
+{
+    "type": "academic_paper",
+    "title": "NPR: News Portal Recommender Dataset",
+    "date": "09/22/2023",
+    "link": "link-to-pdf.com",
+    "image": "images/nvidia_gpu.png",
+    "place": "RecSys 2023"
+}
