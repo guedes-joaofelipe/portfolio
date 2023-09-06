@@ -1,0 +1,9 @@
+[theme]
+primaryColor="#DB313C"
+backgroundColor="#2B2B2B"
+secondaryBackgroundColor="#030202"
+textColor="#FAFAFA"
+font="sans serif"
+
+[server]
+port = 8888
